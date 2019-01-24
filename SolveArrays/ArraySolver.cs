@@ -7,8 +7,13 @@ namespace SolveArrays
     {
         public int Sum(int[] numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int total = 0;
+
+            foreach (int number in numbers)
+            {
+                total = total + number;
+            }
+            return total;
         }
 
         public int SumEvens(int[] numbers)
