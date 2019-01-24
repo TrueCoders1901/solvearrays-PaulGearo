@@ -39,8 +39,16 @@ namespace SolveArrays
 
         public bool IsSumOdd(List<int> numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int total = Sum(numbers.ToArray());
+
+            if (total % 2 != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
