@@ -33,8 +33,28 @@ namespace SolveArrays
 
         public double AverageEvens(int[] numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int totalOfEvens = 0;
+            int countOfEvens = 0;
+
+            foreach (int number in numbers)
+            {
+                if (number % 2 == 0)
+                {
+                    totalOfEvens += number;
+                    countOfEvens += 1;
+                }
+            }
+
+            if (countOfEvens == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double average = (double)totalOfEvens / countOfEvens;
+                return average;
+            }
+
         }
 
         public bool IsSumOdd(List<int> numbers)
