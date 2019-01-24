@@ -18,8 +18,17 @@ namespace SolveArrays
 
         public int SumEvens(int[] numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int totalOfEvens = 0;
+
+            foreach (int number in numbers)
+            {
+                if (number % 2 == 0)
+                {
+                    totalOfEvens += number;
+                }
+            }
+
+            return totalOfEvens;
         }
 
         public double AverageEvens(int[] numbers)
